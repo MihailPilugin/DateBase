@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Orders" targetNamespace="http://tempuri.org/Orders.xsd" xmlns:mstns="http://tempuri.org/Orders.xsd" xmlns="http://tempuri.org/Orders.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString1 (Settings)" PropertyReference="ApplicationSettings.DateBase.Properties.Settings.GlobalReference.Default.ConnectionString1" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CLIENTTableAdapter" GeneratorDataComponentClassName="CLIENTTableAdapter" Name="CLIENT" UserDataComponentName="CLIENTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (Settings)" DbObjectName="MPL18.CLIENT" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "NAME", "COMPANY_NAME" FROM "MPL18"."CLIENT"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NAME" DataSetColumn="NAME" />
+              <Mapping SourceColumn="COMPANY_NAME" DataSetColumn="COMPANY_NAME" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ORDERSTableAdapter" GeneratorDataComponentClassName="ORDERSTableAdapter" Name="ORDERS" UserDataComponentName="ORDERSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (Settings)" DbObjectName="MPL18.ORDERS" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "DATE_START", "DATE_FINISH", "COST", "COMMENTS" FROM "MPL18"."ORDERS"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DATE_START" DataSetColumn="DATE_START" />
+              <Mapping SourceColumn="DATE_FINISH" DataSetColumn="DATE_FINISH" />
+              <Mapping SourceColumn="COST" DataSetColumn="COST" />
+              <Mapping SourceColumn="COMMENTS" DataSetColumn="COMMENTS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PROGRAMM_LANGTableAdapter" GeneratorDataComponentClassName="PROGRAMM_LANGTableAdapter" Name="PROGRAMM_LANG" UserDataComponentName="PROGRAMM_LANGTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (Settings)" DbObjectName="MPL18.PROGRAMM_LANG" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "LANG_NAME" FROM "MPL18"."PROGRAMM_LANG"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="LANG_NAME" DataSetColumn="LANG_NAME" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TYPE_OF_PLATFORMTableAdapter" GeneratorDataComponentClassName="TYPE_OF_PLATFORMTableAdapter" Name="TYPE_OF_PLATFORM" UserDataComponentName="TYPE_OF_PLATFORMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (Settings)" DbObjectName="MPL18.TYPE_OF_PLATFORM" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "NAME_OF_PLATFORM" FROM "MPL18"."TYPE_OF_PLATFORM"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NAME_OF_PLATFORM" DataSetColumn="NAME_OF_PLATFORM" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Orders" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Orders" msprop:Generator_UserDSName="Orders">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CLIENT" msprop:Generator_TableClassName="CLIENTDataTable" msprop:Generator_TableVarName="tableCLIENT" msprop:Generator_TablePropName="CLIENT" msprop:Generator_RowDeletingName="CLIENTRowDeleting" msprop:Generator_RowChangingName="CLIENTRowChanging" msprop:Generator_RowEvHandlerName="CLIENTRowChangeEventHandler" msprop:Generator_RowDeletedName="CLIENTRowDeleted" msprop:Generator_UserTableName="CLIENT" msprop:Generator_RowChangedName="CLIENTRowChanged" msprop:Generator_RowEvArgName="CLIENTRowChangeEvent" msprop:Generator_RowClassName="CLIENTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NAME" msprop:Generator_ColumnVarNameInTable="columnNAME" msprop:Generator_ColumnPropNameInRow="NAME" msprop:Generator_ColumnPropNameInTable="NAMEColumn" msprop:Generator_UserColumnName="NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANY_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_NAME" msprop:Generator_ColumnPropNameInRow="COMPANY_NAME" msprop:Generator_ColumnPropNameInTable="COMPANY_NAMEColumn" msprop:Generator_UserColumnName="COMPANY_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ORDERS" msprop:Generator_TableClassName="ORDERSDataTable" msprop:Generator_TableVarName="tableORDERS" msprop:Generator_TablePropName="ORDERS" msprop:Generator_RowDeletingName="ORDERSRowDeleting" msprop:Generator_RowChangingName="ORDERSRowChanging" msprop:Generator_RowEvHandlerName="ORDERSRowChangeEventHandler" msprop:Generator_RowDeletedName="ORDERSRowDeleted" msprop:Generator_UserTableName="ORDERS" msprop:Generator_RowChangedName="ORDERSRowChanged" msprop:Generator_RowEvArgName="ORDERSRowChangeEvent" msprop:Generator_RowClassName="ORDERSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DATE_START" msprop:Generator_ColumnVarNameInTable="columnDATE_START" msprop:Generator_ColumnPropNameInRow="DATE_START" msprop:Generator_ColumnPropNameInTable="DATE_STARTColumn" msprop:Generator_UserColumnName="DATE_START" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATE_FINISH" msprop:Generator_ColumnVarNameInTable="columnDATE_FINISH" msprop:Generator_ColumnPropNameInRow="DATE_FINISH" msprop:Generator_ColumnPropNameInTable="DATE_FINISHColumn" msprop:Generator_UserColumnName="DATE_FINISH" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="COST" msprop:Generator_ColumnVarNameInTable="columnCOST" msprop:Generator_ColumnPropNameInRow="COST" msprop:Generator_ColumnPropNameInTable="COSTColumn" msprop:Generator_UserColumnName="COST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COMMENTS" msprop:Generator_ColumnVarNameInTable="columnCOMMENTS" msprop:Generator_ColumnPropNameInRow="COMMENTS" msprop:Generator_ColumnPropNameInTable="COMMENTSColumn" msprop:Generator_UserColumnName="COMMENTS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PROGRAMM_LANG" msprop:Generator_TableClassName="PROGRAMM_LANGDataTable" msprop:Generator_TableVarName="tablePROGRAMM_LANG" msprop:Generator_TablePropName="PROGRAMM_LANG" msprop:Generator_RowDeletingName="PROGRAMM_LANGRowDeleting" msprop:Generator_RowChangingName="PROGRAMM_LANGRowChanging" msprop:Generator_RowEvHandlerName="PROGRAMM_LANGRowChangeEventHandler" msprop:Generator_RowDeletedName="PROGRAMM_LANGRowDeleted" msprop:Generator_UserTableName="PROGRAMM_LANG" msprop:Generator_RowChangedName="PROGRAMM_LANGRowChanged" msprop:Generator_RowEvArgName="PROGRAMM_LANGRowChangeEvent" msprop:Generator_RowClassName="PROGRAMM_LANGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LANG_NAME" msprop:Generator_ColumnVarNameInTable="columnLANG_NAME" msprop:Generator_ColumnPropNameInRow="LANG_NAME" msprop:Generator_ColumnPropNameInTable="LANG_NAMEColumn" msprop:Generator_UserColumnName="LANG_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TYPE_OF_PLATFORM" msprop:Generator_TableClassName="TYPE_OF_PLATFORMDataTable" msprop:Generator_TableVarName="tableTYPE_OF_PLATFORM" msprop:Generator_TablePropName="TYPE_OF_PLATFORM" msprop:Generator_RowDeletingName="TYPE_OF_PLATFORMRowDeleting" msprop:Generator_RowChangingName="TYPE_OF_PLATFORMRowChanging" msprop:Generator_RowEvHandlerName="TYPE_OF_PLATFORMRowChangeEventHandler" msprop:Generator_RowDeletedName="TYPE_OF_PLATFORMRowDeleted" msprop:Generator_UserTableName="TYPE_OF_PLATFORM" msprop:Generator_RowChangedName="TYPE_OF_PLATFORMRowChanged" msprop:Generator_RowEvArgName="TYPE_OF_PLATFORMRowChangeEvent" msprop:Generator_RowClassName="TYPE_OF_PLATFORMRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NAME_OF_PLATFORM" msprop:Generator_ColumnVarNameInTable="columnNAME_OF_PLATFORM" msprop:Generator_ColumnPropNameInRow="NAME_OF_PLATFORM" msprop:Generator_ColumnPropNameInTable="NAME_OF_PLATFORMColumn" msprop:Generator_UserColumnName="NAME_OF_PLATFORM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
